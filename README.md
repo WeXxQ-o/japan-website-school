@@ -1,4 +1,4 @@
-# �🇵 Japonsko
+# 🇯🇵 Japonsko
 
 Webová stránka o krajine vychádzajúceho slnka vytvorená pomocou HTML a CSS.
 
