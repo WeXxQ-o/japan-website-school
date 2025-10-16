@@ -35,7 +35,6 @@ zadanie3/
 - Štylizovaný citát s dekoratívnymi úvodzovkami
 - Farebne odlíšené obsahové bloky
 - Galéria s tromi obrázkami
-- Funkčný kontaktný formulár
 
 ## 🚀 Spustenie
 
