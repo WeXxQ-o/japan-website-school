@@ -31,7 +31,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    padding: 15px
+    padding: 15px;
 }
 
 nav a {
@@ -40,12 +40,13 @@ nav a {
     padding: 10px 30px;
     font-size: 14px;
     letter-spacing: 1px;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
+    border-radius: 6px;
 }
 
 nav a:hover {
     background-color: #555;
-    border-radius: 5px;
+    border-radius: 6px;
 }   
 
 /* Hero Section */
@@ -73,7 +74,7 @@ nav a:hover {
 .hero-content {
     position: relative;
     text-align: center;
-    color: white;
+    color: #ffffffec;   
 }
 
 .hero-content h1 {
@@ -103,7 +104,7 @@ nav a:hover {
 
 .author {
     font-size: 15px;
-    color: #666;
+    color: #666666;
     font-weight: 500;
 }
 
@@ -143,6 +144,14 @@ nav a:hover {
 
 .content-box h1, .content-box h2 {
     margin-bottom: 15px;
+}
+
+.box-right h1 {
+    color: #00e1ff;
+}
+
+.box-left h1 , .box-left h2 {
+    color: #ff6b6b;
 }
 
 .content-box p {
@@ -187,7 +196,7 @@ nav a:hover {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 5px solid #0c0c0c;
+    border: 6px solid #000000;
 }
 
 /* Kontakt Section */
