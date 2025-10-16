@@ -8,6 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
+hr {
+    border: none;
+    border-top: 3px solid #d5d5d5;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f1ed;
@@ -25,7 +31,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    padding: 15px 0;
+    padding: 15px
 }
 
 nav a {
@@ -39,7 +45,8 @@ nav a {
 
 nav a:hover {
     background-color: #555;
-}
+    border-radius: 5px;
+}   
 
 /* Hero Section */
 .hero {
@@ -83,18 +90,21 @@ nav a:hover {
 .quote {
     text-align: center;
     padding: 80px 20%;
-    font-style: italic;
-    line-height: 1.8;
+    background-color: #f8f8f8;
 }
 
 .quote p:first-child {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #333;
 }
 
 .author {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
+    font-weight: 500;
 }
 
 /* Obsah Section */
