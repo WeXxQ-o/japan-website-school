@@ -10,7 +10,7 @@ html {
 
 hr {
     border: none;
-    border-top: 4px solid #d5d5d5;
+    border-top: 3px solid #EAA1A1;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
 }
@@ -24,8 +24,9 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #4A4A4A;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(234, 161, 161, 0.15);
 }
 
 nav {
@@ -45,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #EAA1A1;
     border-radius: 6px;
 }   
 
@@ -68,7 +69,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, rgba(234, 161, 161, 0.25), rgba(0, 0, 0, 0.74));
 }
 
 .hero-content {
@@ -91,7 +92,7 @@ nav a:hover {
 .quote {
     text-align: center;
     padding: 80px 20%;
-    background-color: #f8f8f8;
+    background-color: #FFFEF9;
 }
 
 .quote p:first-child {
@@ -99,13 +100,13 @@ nav a:hover {
     font-style: italic;
     line-height: 1.8;
     margin-bottom: 25px;
-    color: #333;
+    color: #4A4A4A;
 }
 
 .author {
     font-size: 15px;
-    color: #666666;
-    font-weight: 500;
+    color: #EAA1A1;
+    font-weight: 600;
 }
 
 /* Obsah Section */
@@ -117,29 +118,52 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 50px;
+    color: #4A4A4A;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#obsah > h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #EAA1A1;
 }
 
 .content-box {
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 25px;
     border-radius: 10px;
     border: 3px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(245, 196, 196, 0.15);
 }
 
 .box-left {
-    background-color: #2a2a2a;
-    color: white;
-    border-color: #ff4444;
+    background-color: #5A5A5A;
+    color: #F8F8F8;
+    border-color: #F5C4C4;
     float: left;
     width: 48%;
+    text-align: left;
 }
 
 .box-right {
-    background-color: #888;
-    color: white;
-    border-color: #00bcd4;
+    background-color: #FFFEF9;
+    color: #4A4A4A;
+    border-color: #F2D9B3;
     float: right;
     width: 48%;
+    text-align: right;
 }
 
 .content-box h1, .content-box h2 {
@@ -147,11 +171,11 @@ nav a:hover {
 }
 
 .box-right h1 {
-    color: #00e1ff;
+    color: #EAA1A1;
 }
 
 .box-left h1 , .box-left h2 {
-    color: #ff6b6b;
+    color: #F2D9B3;
 }
 
 .content-box p {
@@ -161,17 +185,20 @@ nav a:hover {
 
 .button-link {
     display: inline-block;
-    background-color: #000;
+    background-color: #EAA1A1;
     color: white;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s, cursor 0.3s;
+    transition: all 0.3s;
+    font-weight: 600;
 }
 
 .button-link:hover {
-    background-color: #333;
+    background-color: #DD8E8E;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(234, 161, 161, 0.3);
 }
 
 /* Galéria Section */
@@ -179,24 +206,47 @@ nav a:hover {
     clear: both;
     padding: 80px 10%;
     text-align: center;
+    background-color: #FFFEF9;
 }
 
 #galeria h1 {
     font-size: 36px;
     margin-bottom: 50px;
+    color: #4A4A4A;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#galeria h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #EAA1A1;
 }
 
 .gallery-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .gallery-container img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 6px solid #000000;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0 6px #F5C4C4;
+    transition: all 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 6px #EAA1A1, 0 10px 30px rgba(234, 161, 161, 0.4);
 }
 
 /* Kontakt Section */
@@ -208,6 +258,20 @@ nav a:hover {
 #kontakt h1 {
     font-size: 36px;
     margin-bottom: 50px;
+    color: #4A4A4A;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#kontakt h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #EAA1A1;
 }
 
 form {
@@ -221,42 +285,48 @@ label {
     text-align: left;
     margin-bottom: 8px;
     font-size: 14px;
+    color: #4A4A4A;
+    font-weight: 600;
 }
 
 input, textarea {
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #F2D9B3;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s;
 }
 
-textarea {
-    resize: vertical;
-    min-height: 120px;
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #F5C4C4;
 }
 
 button {
-    background-color: #000;
+    background-color: #EAA1A1;
     color: white;
     padding: 12px 30px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
     font-size: 14px;
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #DD8E8E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(234, 161, 161, 0.3);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #4A4A4A;
+    color: #F8F8F8;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 15px;
+    margin-top: 20px;
 }
