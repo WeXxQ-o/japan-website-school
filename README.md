@@ -59,40 +59,6 @@ japan-website-school/
 
 ---
 
-## 🎨 Color Palette
-
-<table>
-<tr>
-<td align="center" width="200">
-<img src="https://via.placeholder.com/150/f5f1ed/f5f1ed.png" width="100" height="100" />
-<br><code>#f5f1ed</code>
-<br><b>Warm Beige</b>
-</td>
-<td align="center" width="200">
-<img src="https://via.placeholder.com/150/FFFEF9/FFFEF9.png" width="100" height="100" />
-<br><code>#FFFEF9</code>
-<br><b>Off White</b>
-</td>
-<td align="center" width="200">
-<img src="https://via.placeholder.com/150/4A4A4A/4A4A4A.png" width="100" height="100" />
-<br><code>#4A4A4A</code>
-<br><b>Charcoal</b>
-</td>
-<td align="center" width="200">
-<img src="https://via.placeholder.com/150/EAA1A1/EAA1A1.png" width="100" height="100" />
-<br><code>#EAA1A1</code>
-<br><b>Soft Pink</b>
-</td>
-<td align="center" width="200">
-<img src="https://via.placeholder.com/150/F2D9B3/F2D9B3.png" width="100" height="100" />
-<br><code>#F2D9B3</code>
-<br><b>Light Tan</b>
-</td>
-</tr>
-</table>
-
----
-
 ## 🛠️ Technologies & Tools
 
 | Technology | Purpose |
