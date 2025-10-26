@@ -283,7 +283,7 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .gallery-container img {
@@ -291,14 +291,14 @@ nav a:hover {
     height: 300px;
     object-fit: cover;
     border: 0;
-    border-radius: 4px;
-    box-shadow: 0 0 0 6px #F5C4C4;
+    border-radius: 6px;
+    box-shadow: 0 0 0 3px #F5C4C4;
     transition: all 0.3s ease;
 }
 
 .gallery-container img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 0 6px #EAA1A1, 0 10px 30px rgba(234, 161, 161, 0.4);
+    box-shadow: 0 0 0 4px #EAA1A1, 0 10px 30px rgba(234, 161, 161, 0.4);
 }
 
 /* Kontakt*/
@@ -392,3 +392,81 @@ footer {
     padding: 15px;
     margin-top: auto;
 }
+
+/* TABLET */
+@media (max-width: 992px) {
+    nav a {
+        padding: 15px 20px;
+        font-size: 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
+    #obsah, #galeria, #kontakt {
+        padding: 60px 8%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    nav a {
+        padding: 12px 0;
+        border-bottom: 1px solid #EAA1A1;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .quote p:first-child {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .button-link, button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
